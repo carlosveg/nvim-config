@@ -12,8 +12,12 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 
 " Split resize
-nnoremap <Leader>> 5<C-w>>
-nnoremap <Leader>< 5<C-w><
+" nnoremap <Leader>> 5<C-w>>
+" nnoremap <Leader>< 5<C-w><
+nnoremap <S-k> :resize+5<CR>
+nnoremap <S-j> :resize-5<CR>
+nnoremap <S-h> :vertical resize-5<CR>
+nnoremap <S-l> :vertical resize+5<CR>
 
 " New panel (split horizontal)
 nnoremap <C-Up> <esc>:sp<CR>
