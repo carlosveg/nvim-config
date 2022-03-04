@@ -16,7 +16,7 @@ nnoremap <Leader>> 5<C-w>>
 nnoremap <Leader>< 5<C-w><
 
 " New panel (split horizontal)
-nnoremap <C-n> <esc>:sp<CR>
+nnoremap <C-Up> <esc>:sp<CR>
 
 " New panel (split vertical)
-nnoremap <C-Up> <esc>:vsp<CR>
+nnoremap <C-Down> <esc>:vsp<CR>
