@@ -6,8 +6,9 @@ set title
 set cursorline
 set mouse=a
 set encoding=utf-8
-set clipboard+=unnamedplus
+set clipboard=unnamed
 set wrap
+set autoread " Reload file if changed externally
 
 syntax on
 
