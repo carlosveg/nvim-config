@@ -4,6 +4,7 @@ let mapleader=" "
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-a> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+nmap <Leader>r :NERDTreeFocus<CR>R<c-w><c-p>
 
 " Save
 nnoremap <Leader>w :w<CR>
