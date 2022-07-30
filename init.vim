@@ -29,4 +29,5 @@ endif
 
 lua << END
 require('lualine').setup()
+require("nvim-tree").setup()
 END
