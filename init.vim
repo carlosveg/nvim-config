@@ -30,4 +30,5 @@ endif
 lua << END
 require('lualine').setup()
 require("nvim-tree").setup()
+require("bufferline").setup{}
 END

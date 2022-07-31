@@ -5,6 +5,7 @@ Plug 'nvim-lualine/lualine.nvim'
 " If you want to have icons in your statusline choose one of these
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'kyazdani42/nvim-tree.lua'
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 
 " Theme
 Plug 'morhetz/gruvbox'
