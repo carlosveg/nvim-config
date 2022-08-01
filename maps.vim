@@ -1,7 +1,6 @@
 let mapleader=" "
 
 " Config NERDTREE
-nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-a> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 nmap <Leader>r :NERDTreeFocus<CR>R<c-w><c-p>
@@ -16,8 +15,6 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 
 " Split resize
-" nnoremap <Leader>> 5<C-w>>
-" nnoremap <Leader>< 5<C-w><
 nnoremap <S-k> :resize+5<CR>
 nnoremap <S-j> :resize-5<CR>
 nnoremap <S-h> :vertical resize-5<CR>
@@ -45,8 +42,22 @@ nnoremap <silent> <C-Left>  :BufferLineCyclePrev<CR>
 nnoremap <silent> <A-Right> :BufferLineMoveNext<CR>
 nnoremap <silent> <A-Left> :BufferLineMovePrev<CR>
 
+" Maps for move line up or down
+" NORMAL mode
+nnoremap <silent> <A-Down> :m .+1<CR>==
+nnoremap <silent> <A-Up> :m .-2<CR>==
+" INSERT mode
+inoremap <silent> <A-Down> <Esc>:m .+1<CR>==gi
+inoremap <silent> <A-Up> <Esc>:m .-2<CR>==gi
+" VISUAL mode
+vnoremap <silent> <A-Down> :m '>+1<CR>gv=gv
+vnoremap <silent> <A-Up> :m '<-2<CR>gv=gv
+
 " Clipboard Copy
 vnoremap <C-c> "*y<CR>
 
 " Clipboard Copy
 nnoremap <C-v> "*p<CR>
+
+" Duplicate line
+" nnoremap <C-S-a> :t.<CR>
