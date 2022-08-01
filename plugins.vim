@@ -9,6 +9,7 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 
 " Theme
 Plug 'morhetz/gruvbox'
+
 " Resaltado de sintaxis (syntax highligth)
 Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
