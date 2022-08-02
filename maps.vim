@@ -59,5 +59,12 @@ vnoremap <C-c> "*y<CR>
 " Clipboard Copy
 nnoremap <C-v> "*p<CR>
 
+" Telescope (find files)
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
 " Duplicate line
 " nnoremap <C-S-a> :t.<CR>

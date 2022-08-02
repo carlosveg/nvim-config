@@ -9,6 +9,7 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 
 " Theme
 Plug 'morhetz/gruvbox'
+Plug 'EdenEast/nightfox.nvim'
 
 " Resaltado de sintaxis (syntax highligth)
 Plug 'sheerun/vim-polyglot'
@@ -27,5 +28,9 @@ Plug 'christoomey/vim-tmux-navigator'
 
 " Autocomplete
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Telescope
+" Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 
 call plug#end()
