@@ -25,3 +25,8 @@ let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
 
 " Polyglot syntax highlighting
 let g:python_highlight_all = 1
+
+" Coc
+let g:LanguageClient_serverCommands = {
+    \ 'sh': ['bash-language-server', 'start']
+    \ }
