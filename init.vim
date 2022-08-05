@@ -12,9 +12,10 @@ set autoread " Reload file if changed externally
 
 syntax on
 
-so ~/.config/nvim/plugins.vim
-so ~/.config/nvim/plugins-config.vim
 so ~/.config/nvim/maps.vim
+so ~/.config/nvim/plugins.vim
+so ~/.config/nvim/coc-config.vim
+so ~/.config/nvim/plugins-config.vim
 
 lua << END
 require('lualine').setup()
