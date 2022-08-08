@@ -18,3 +18,5 @@ so ~/.config/nvim/maps.vim
 so ~/.config/nvim/plugins.vim
 so ~/.config/nvim/plugins-config.vim
 so ~/.config/nvim/lua/user/init.lua
+
+autocmd BufWritePre * :%s/\s\+$//e
