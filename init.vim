@@ -8,7 +8,9 @@ set encoding=utf-8
 set clipboard=unnamed
 set wrap
 set autoread " Reload file if changed externally
-" set termguicolors
+
+" with gruvbox comment next line
+set termguicolors
 
 syntax on
 
