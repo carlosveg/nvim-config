@@ -15,18 +15,5 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
-
-" NERDTree Syntax highligth
-let g:NERDTreeFileExtensionHighlightFullName = 1
-let g:NERDTreeExactMatchHighlightFullName = 1
-let g:NERDTreePatternMatchHighlightFullName = 1
-let g:NERDTreeHighlightFolders = 1 " enables folder icon highlighting using exact match
-let g:NERDTreeHighlightFoldersFullName = 1 " highlights the folder name
-
 " Polyglot syntax highlighting
 let g:python_highlight_all = 1
-
-" Coc
-let g:LanguageClient_serverCommands = {
-    \ 'sh': ['bash-language-server', 'start']
-    \ }

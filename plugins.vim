@@ -26,11 +26,7 @@ Plug 'alvan/vim-closetag'
 " tmux
 Plug 'christoomey/vim-tmux-navigator'
 
-" Autocomplete
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 " Telescope
-Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' }
 
