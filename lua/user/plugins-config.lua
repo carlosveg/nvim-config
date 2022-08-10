@@ -2,9 +2,9 @@ require('lualine').setup()
 
 require("nvim-tree").setup()
 
-require("bufferline").setup{}
+require("bufferline").setup {}
 
-require'nvim-treesitter.configs'.setup {
+require 'nvim-treesitter.configs'.setup {
   highlight = {
     enable = true,
     -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
@@ -16,31 +16,15 @@ require'nvim-treesitter.configs'.setup {
 }
 
 require("nvim-lsp-installer").setup({
-    automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
-    ui = {
-        icons = {
-            server_installed = "✓",
-            server_pending = "➜",
-            server_uninstalled = "✗"
-        }
+  automatic_installation = true, -- automatically detect which servers to install (based on which servers are set up via lspconfig)
+  ui = {
+    icons = {
+      server_installed = "✓",
+      server_pending = "➜",
+      server_uninstalled = "✗"
     }
+  }
 })
-
--- Setup lspconfig.
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
--- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-require('lspconfig')['sumneko_lua'].setup {
-  capabilities = capabilities
-}
-require('lspconfig')['bashls'].setup {
-  capabilities = capabilities
-}
-require('lspconfig')['jdtls'].setup {
-  capabilities = capabilities
-}
-require('lspconfig')['pyright'].setup {
-  capabilities = capabilities
-}
 
 -- suppress error messages from lang servers
 vim.notify = function(msg, log_level, _opts)
@@ -50,6 +34,6 @@ vim.notify = function(msg, log_level, _opts)
   if log_level == vim.log.levels.ERROR then
     vim.api.nvim_err_writeln(msg)
   else
-    vim.api.nvim_echo({{msg}}, true, {})
+    vim.api.nvim_echo({ { msg } }, true, {})
   end
 end
