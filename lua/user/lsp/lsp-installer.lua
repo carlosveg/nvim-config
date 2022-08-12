@@ -51,6 +51,11 @@ require'lspconfig'.sumneko_lua.setup {
       },
     },
   },
-  capabilities = capabilities;
+  capabilities = capabilities,
+  on_attach = on_attach
+}
+
+require'lspconfig'.clangd.setup {
+  capabilities = capabilities,
   on_attach = on_attach
 }
