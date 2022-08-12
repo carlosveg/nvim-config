@@ -1,11 +1,5 @@
 let mapleader=" "
 
-" Config NERDTREE
-nnoremap <C-a> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
-nmap <Leader>r :NERDTreeFocus<CR>R<c-w><c-p>
-
-
 " Config NvimTree
 nnoremap <C-b> :NvimTreeToggle<CR>
 
@@ -64,8 +58,7 @@ vnoremap <silent> <A-Up> :m '<-2<CR>gv=gv
 " Clipboard
 " Clipboard Copy
 vnoremap <C-c> "*y<CR>
-
-" Clipboard Copy
+" Clipboard Paste
 nnoremap <C-v> "*p<CR>
 
 
